@@ -1,0 +1,26 @@
+
+FUNCTION Puiss(x,y) : INTEGER
+VAR
+    i:=INTEGER
+    result:=INTEGER
+BEGIN
+rest:=1
+FOR i FROM 1 TO y DO
+rest:= rest*x
+END
+    RETURN result ;
+ALGORITHM calcul
+VAR
+x:= INTEGER
+BEGIN
+x:=Puiss(4,2)
+END
+FUNCTION Puiss(x,y): INTEGER
+BEGIN
+   IF y = 0 THEN
+        RETURN 1
+        ELSE IF y = 1 THEN
+        RETURN x
+    ELSE
+        RETURN x * Puiss(x, y-1 )
+    ENDIF

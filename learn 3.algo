@@ -1,0 +1,39 @@
+// FUNCTION palindrome(s): STRING
+// VAR
+// n: INTEGER
+// x: INTEGER
+// y: INTEGER
+// BEGIN
+// n:=LENGTH(s)
+// x:=0
+// y:=n-1
+//  WHILE (x<y) DO
+//    IF s[x] != s[y]: THEN
+//     return "not similar"
+//  ENDIF
+//  x++;  y--; THEN
+//  END_WHILE
+//    return "similar"
+//    END
+
+FUNCTION Palaindrome(str,i): STRING
+VAR 
+ j:INTEGER
+BEGIN
+  j=str.LENGTH-1-i
+   IF (i==j ou i>j) THEN
+ return "palaindrome"
+ELSE_IF (str[i]!=str[j])THEN
+ return "non palindrome"
+ELSE
+ return palaindrome(str,i+1)
+END_IF
+END_IF
+
+END
+
+
+
+
+
+   

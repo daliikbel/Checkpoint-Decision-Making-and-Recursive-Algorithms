@@ -1,0 +1,21 @@
+FUNCTION fac(n) : INTEGER
+VAR
+    i : INTEGER
+    result :INTEGER
+BEGIN
+    result :=1
+    FOR i FROM 1 TO n DO
+    result := result*i
+END_FOR
+    RETURN result ;
+END
+
+ALGORITHM Factorial
+VAR
+    n: INTEGER
+    factorial: INTEGER
+BEGIN
+n:= 4
+factorial:= fac(n)
+Write factorial
+END
